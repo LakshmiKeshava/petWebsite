@@ -116,6 +116,12 @@ loginForm.addEventListener('submit', (e) => {
         isValid = false;
     }
 
+    if(password.length<6){
+        document.getElementById('loginPasswordError').textContent = 'Password must be at least 6 characters long';
+        isValid = false;
+
+    }
+
     if (isValid) {
         alert('Login successful! Welcome back to PetAdopt');
         loginModal.style.display = 'none';
