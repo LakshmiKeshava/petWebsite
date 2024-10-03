@@ -88,6 +88,7 @@ signupForm.addEventListener('submit', (e) => {
 
     if (isValid) {
         alert('Signup successful! Welcome to PetAdopt');
+        signupModal.style.display='none';
     }
 });
 
