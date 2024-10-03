@@ -117,5 +117,6 @@ loginForm.addEventListener('submit', (e) => {
 
     if (isValid) {
         alert('Login successful! Welcome back to PetAdopt');
+        loginModal.style.display = 'none';
     }
 });
