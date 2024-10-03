@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetAdopt | Adopt a Pet Today</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="#">PetAdopt</a></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#pets">Adopt a Pet</a></li>
+                    <li><a href="#" id="openSignup">Sign Up</a></li>
+                    <li><a href="#" id="openLogin">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 style="color: black;"><b>Welcome to PetAdopt</b></h2>
+            <p style="color: black;"><b>Your perfect companion is just a click away!</b></p>
+            <a href="#pets" class="btn hero-btn"><b>Browse Pets</b></a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are dedicated to helping pets find their forever homes. With thousands of pets available for adoption, you're sure to find the perfect addition to your family. Each adoption helps save lives!</p>
+        </div>
+    </section>
+
+    <section id="pets" class="pets">
+        <div class="container">
+            <h2>Adopt a Pet</h2>
+            <div class="pet-grid">
+                <div class="pet-card">
+                    <img src="dog1.jpg" alt="Max the Golden Retriever">
+                    <h3>Max</h3>
+                    <p>Golden Retriever</p>
+                    <a href="#" class="btn">Adopt Max</a>
+                </div>
+                <div class="pet-card">
+                    <img src="cat1.jpg" alt="Luna the Siamese Cat">
+                    <h3>Luna</h3>
+                    <p>Siamese</p>
+                    <a href="#" class="btn">Adopt Luna</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSignup">&times;</span>
+            <h2>Sign Up</h2>
+            <form class="auth-form" id="signupForm">
+                <input type="text" id="username" placeholder="Username">
+                <span class="error-message" id="usernameError"></span>
+
+                <input type="email" id="email" placeholder="Email">
+                <span class="error-message" id="emailError"></span>
+
+                <input type="password" id="password" placeholder="Password">
+                <span class="error-message" id="passwordError"></span>
+
+                <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                <span class="error-message" id="confirmPasswordError"></span>
+
+                <input type="tel" id="phone" placeholder="Phone Number">
+                <span class="error-message" id="phoneError"></span>
+
+                <label class="terms">
+                    <input type="checkbox" id="terms"> I agree to the <a href="#">Terms & Conditions</a>
+                </label>
+                <span class="error-message" id="termsError"></span>
+
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <h2>Login</h2>
+            <form class="auth-form" id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email">
+                <span class="error-message" id="loginEmailError"></span>
+
+                <input type="password" id="loginPassword" placeholder="Password">
+                <span class="error-message" id="loginPasswordError"></span>
+
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PetAdopt. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
